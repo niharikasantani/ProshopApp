@@ -1,0 +1,38 @@
+{
+	"name": "proshopapp",
+	"version": "1.0.0",
+	"description": "shopping cart app",
+	"main": "server.js",
+	"type": "module",
+	"scripts": {
+		"start": "node backend/server",
+		"server": "nodemon backend/server",
+		"client": "npm start --prefix frontend",
+		"dev": "concurrently \"npm run server\" \"npm run client\"",
+		"dataimport": "node backend/seeder",
+		"datadestroy": "node backend/seeder -d"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/niharikasantani/ProshopApp.git"
+	},
+	"author": "Niharika",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/niharikasantani/ProshopApp/issues"
+	},
+	"homepage": "https://github.com/niharikasantani/ProshopApp#readme",
+	"dependencies": {
+		"axios": "^0.20.0",
+		"bcryptjs": "^2.4.3",
+		"colors": "^1.4.0",
+		"dotenv": "^8.2.0",
+		"express": "^4.17.1",
+		"express-async-handler": "^1.1.4",
+		"mongoose": "^5.10.7"
+	},
+	"devDependencies": {
+		"concurrently": "^5.3.0",
+		"nodemon": "^2.0.4"
+	}
+}
