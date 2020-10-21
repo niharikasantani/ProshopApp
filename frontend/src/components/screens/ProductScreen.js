@@ -19,7 +19,7 @@ import { addToCart } from '../../actions/cartActions';
 
 const ProductScreen = ({ history, match }) => {
 	const [quantity, setQuantity] = useState(1);
-	const [rating, setRating] = useState(0);
+
 	const dispatch = useDispatch();
 
 	const productDetails = useSelector((state) => state.productDetails);
